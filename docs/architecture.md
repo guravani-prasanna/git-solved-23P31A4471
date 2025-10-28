@@ -1,7 +1,7 @@
 # System Architecture
 
 ## Overview
-DevOps Simulator follows a microservices architecture designed for high availability and scalability. This document covers both production and development configurations.
+DevOps Simulator follows a microservices architecture designed for high availability, scalability, and rapid development. This document outlines both production and development configurations.
 
 ## Components
 
@@ -9,24 +9,34 @@ DevOps Simulator follows a microservices architecture designed for high availabi
 - **Technology**: Node.js + Express
 - **Production Port**: 8080
 - **Development Port**: 3000
-- **Scaling**: Horizontal auto-scaling (production only)
-- **Development Features**: Hot reload, debug mode
+- **Scaling**:
+  - Production: Horizontal auto-scaling
+  - Development: Single instance with hot reload and debug mode
 
 ### 2. Database Layer
 - **Database**: PostgreSQL 14
-- **Production**: Master-slave replication with automated backups
-- **Development**: Single local instance with seed data
+- **Production**:
+  - Master-slave replication
+  - Automated backups
+- **Development**:
+  - Local instance
+  - Seed data enabled
+  - Debug queries supported
 
 ### 3. Monitoring System
-- **Production**: Prometheus + Grafana with email alerts
-- **Development**: Console logging with verbose output
-- **Metrics**: CPU, Memory, Disk, Network
+- **Production**:
+  - Prometheus + Grafana
+  - Email alerts
+- **Development**:
+  - Console logging
+  - Verbose output
+- **Metrics Tracked**: CPU, Memory, Disk, Network
 
 ## Deployment Strategy
 
 ### Production
 - **Method**: Rolling updates
-- **Zero-downtime**: Yes
+- **Zero-downtime**: Enabled
 - **Rollback**: Automated on failure
 - **Region**: us-east-1
 
@@ -36,5 +46,11 @@ DevOps Simulator follows a microservices architecture designed for high availabi
 - **Testing**: Automated tests before deployment
 
 ## Security
-- **Production**: SSL/TLS encryption, strict access controls
-- **Development**: Relaxed security for easier debugging
+
+### Production
+- SSL/TLS encryption
+- Strict access controls
+
+### Development
+- Relaxed security for debugging
+- Mock external APIs

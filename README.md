@@ -5,18 +5,8 @@ A comprehensive CI/CD configuration management tool for enterprise deployments.
 ## Project Status
 - **Version**: 1.0.0 (Production), 2.0.0-beta (Development)
 - **Environments**: Production & Development
-- **Student**: [YOUR NAME]
-- **Student ID**: [YOUR ID]
-- **Maintainer**: DevOps Team
-
-## New Features (In Development)
-- 🚀 Kubernetes orchestration support
-- 🔄 Advanced blue-green deployment
-- 📊 Enhanced monitoring dashboard
-- 🔐 OAuth2 authentication
-- 🐳 Docker Compose integration
-- **NEW**: Multi-cloud support (AWS, Azure, GCP)
-- **NEW**: Slack/Discord notifications
+- **Student**: Guravani Prasanna Lakshmi
+- **Student ID**: 23p31a4471
 
 ## Features
 
